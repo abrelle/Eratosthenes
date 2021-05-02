@@ -34,11 +34,8 @@ public class ThreadController {
         catch (InterruptedException e) {
             e.printStackTrace();
         }
-//        for(int i = 0; i < threads; ++i){
-//            System.out.println(sieveThreads[i].getThreadName() + " " + sieveThreads[i].getNums());
-//        }
+
         final long endTime = System.currentTimeMillis();
-       // sieve.printNumbers();
         System.out.println("Number of primes is " + sieve.getNumPrimes());
         System.out.println("Total execution time: " + (endTime - startTime)/1000f);
     }
